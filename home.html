@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schal's-App</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="./script.js"></script>
 </head>
 <body>
-    <input type="text" id="newelement">
-    <button onclick="enterpressed()">Enter</button>
-    <br><br>
-    <ul id="list">
-     <li>Tea <button onclick="deletecalled(event)"> Delete </button></li>
-     <li>Coffee <button onclick="deletecalled(event)"> Delete </button></li>
-     <li>MilkShake <button onclick="deletecalled(event)"> Delete </button></li>
-     <li>Lemon Soda <button onclick="deletecalled(event)"> Delete </button></li>
-
-</ul>
-    
+    <div class="container ">
+        <div class="tab tab1">
+            <h3>List of Persons</h3>
+            <table  id="infoTable">
+                <tr>
+                    <td>Name</td>
+                    <td>Gender</td>
+                    <td>Age</td>
+                    <td>City</td>
+                    <td>Actions</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab tab2">
+            <h3>Add/Update Person Form</h3>
+            Name: <input id="name" name="Name" type="text"><br><br>
+            Gender: Male <input name="Gender" id="male" type="radio"> Female <input id="female" name="Gender" type="radio"><br><br>
+            Age: <input id="age" name="Age" type="text"><br><br>
+            City: <input id="city" name="City" type="text"><br><br>&nbsp;
+            &nbsp;
+            &nbsp;
+            <button  id="reset">Reset</button>&nbsp;
+            <button  id="add">ADD</button>&nbsp;
+            <button  id="update">Update</button>&NonBreakingSpace;
+        </div>
+    </div>
 </body>
 </html>

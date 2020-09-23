@@ -1,8 +1,30 @@
+.container{
+    overflow: hidden;
+}
+.tab{
+    float: left;
+    
+}
+.tab1{
+    padding-right: 100px;
+}
+.tab2{
+    padding-left: 10px;
+    border: 2px solid black;
+    height: 240px;
+    width: 13%;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-right: 50px;
+   background-color: lightgray;
+}
 button{
-    color: cornflowerblue;
-    margin: 1em;
-    display: inline-table;
-    
-
-    
+    border: 2px solid black;
 }
